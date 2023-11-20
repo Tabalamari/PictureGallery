@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.header {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headertext {
+    font-size: 20px;
+    font-weight: bold;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.headerexplain {
+    padding-left: 30px;
+}
+
+.basket {
+    width: 30px;
+}
+
+.firstpicture {
+    position: relative;
+    height: 500px;
+}
+
+.firstpicture img {
+    width: 100%;
+    height: 500px;
+}
+
+.firstpicture:after {
+    content: '';
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.textover {
+    position: absolute;
+    top: 110px;
+    left: 70px;
+    z-index: 2;
+    color: beige;
+    font-size: 60px;
+    text-align: center;
+}
+
+.firstblock,
+.secondblock,
+.thirdblock {
+    height: 350px;
+    padding-top: 80px;
+    padding-left: 100px;
+    color: beige;
+}
+
+.firstblock,
+.thirdblock,
+.fifthblock {
+    background-color: #0e607e;
+}
+
+
+
+.firstblockwrapper,
+.secondblockwrapper,
+.thirdblockwrapper {
+    display: flex;
+}
+
+.firstblocktext,
+.secondblocktext,
+.thirdblocktext {
+    font-size: 30px;
+    font-weight: bold;
+    height: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.firstblocktextwrap,
+.secondblocktextwrap,
+.thirdblocktextwrap {
+    margin: 10px;
+}
+
+.secondblock,
+.fourthblock {
+    background-color: rgb(170, 125, 69);
+}
+
+.firstblockimg,
+.secondblockimg,
+.thirdblockimg {
+    border-radius: 7px;
+}
+
+.footerinfo {
+    margin: 30px;
+}

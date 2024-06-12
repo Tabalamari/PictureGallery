@@ -1,0 +1,3 @@
+This project I made for my Portfolio. I used only HTML and css in this project to show how I can use these tools.
+
+What was used: radio buttons, toggle buttons, Hamburger menu, Pure CSS sidebar toggle menu, Animated CSS menu, Custom checkboxes, Pure CSS select dropdown, Modal/Popup without JavaScript, Animated gradient ghost button, CSS image slider, Basic HTML & CSS website layout, Tribute page, Survey page with HTML forms, Sign-up page / Log-in page, Job application form page, Landing page, Product landing page, Interactive navigation bar, Responsive website header, 

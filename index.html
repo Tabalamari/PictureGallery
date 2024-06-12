@@ -4,56 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/normalize.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <container>
         <header class="header">
-            <img style="height: 80px" src="/lorem-high-resolution-logo-transparent.png">
+            <img style="height: 80px" src="lorem-high-resolution-logo-transparent.png">
             <div class="headertext">Lorem ipsum dolor sit amet.
                 <span class="headerexplain">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
             </div>
             <div>
-                <button><img class="basket" src="/icons/shopping-online.png" /></button>
+                <button><img class="basket" src="icons/shopping-online.png" /></button>
             </div>
         </header>
+
+
         <main>
-            <div class="firstpicture">
-                <img src="/pictures/headpicture.jpeg">
+            <div class="firstimg">
+                <img src="pictures/headpicture.jpeg">
                 <div class="textover">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex iusto voluptatibus
-                     reprehenderit corporis accusamus!</div>
+                    reprehenderit corporis accusamus!</div>
             </div>
 
             <div class="firstblock">
                 <div class="firstblockwrapper">
-                    <img class="firstblockimg" src="/pictures/headpicture500.jpeg">
                     <div class="firstblocktextwrap">
                         <div class="firstblocktext">Lorem ipsum dolor sit amet.</div>
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat incidunt mollitia
+                        <div class="firstblocktextdescribe">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repellat incidunt mollitia
                             veritatis
                             alias voluptas suscipit sunt enim delectus, animi quos architecto provident dicta minima
                             modi
                             consequatur asperiores in fugit distinctio.
                         </div>
+                        <div class="container">
+
+                            <h2>Your favorite color scheme:</h2>
+
+                            <ul>
+                                <img class="firstblockimg" src="pictures/headpicture500.jpeg">
+                                <li>
+                                    <input type="radio" id="f-option" name="selector">
+                                    <label for="f-option">Cold</label>
+
+                                    <!-- <div class="check"></div> -->
+
+                                </li>
+
+                                <li>
+                                    <input type="radio" id="s-option" name="selector">
+                                    <label for="s-option">Warm</label>
+
+                                    <!-- <div class="check">
+                                        <div class="inside"></div>
+                                    </div> -->
+
+                                </li>
+
+                                <li>
+                                    <input type="radio" id="t-option" name="selector">
+                                    <label for="t-option">Neutral</label>
+
+                                    <!-- <div class="check">
+                                        <div class="inside"></div>
+                                    </div> -->
+                                </li>
+
+                            </ul>
+
+                        </div>
+
                     </div>
                 </div>
 
             </div>
             <div class="secondblock">
                 <div class="secondblockwrapper">
-                    <img class="secondblockimg" src="/pictures/headpicture500.jpeg">
-
                     <div class="secondblocktextwrap">
                         <div class="secondblocktext">Lorem ipsum dolor sit amet. </div>
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat incidunt mollitia
+                        <div class="secondblocktextdescribe">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repellat incidunt mollitia
                             veritatis
                             alias voluptas suscipit sunt enim delectus, animi quos architecto provident dicta minima
                             modi
                             consequatur asperiores in fugit distinctio.
                         </div>
+                        <img src="pictures/rain_evening.jpeg" alt="Here is a picture" class="secondblockimg">
+
                     </div>
 
 
@@ -61,22 +101,25 @@
             </div>
             <div class="thirdblock">
                 <div class="thirdblockwrapper">
-                    <img class="thirdblockimg" src="/pictures/headpicture500.jpeg">
                     <div class="thirdblocktextwrap">
                         <div class="thirdblocktext">Lorem ipsum dolor sit amet. </div>
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat incidunt mollitia
+                        <div class="thirdblocktextdescribe">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repellat incidunt mollitia
                             veritatis
                             alias voluptas suscipit sunt enim delectus, animi quos architecto provident dicta minima
                             modi
                             consequatur asperiores in fugit distinctio.
                         </div>
+                        <img class="thirdblockimg" src="pictures/headpicture500.jpeg">
                     </div>
                 </div>
-                
+
         </main>
 
         <footer>
-            <div class="footerinfo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat reprehenderit exercitationem laborum unde possimus culpa fugiat ad reiciendis dicta quisquam nihil, delectus quia voluptates commodi fuga libero, saepe perferendis? Repellendus?</div>
+            <div class="footerinfo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat reprehenderit
+                exercitationem laborum unde possimus culpa fugiat ad reiciendis dicta quisquam nihil, delectus quia
+                voluptates commodi fuga libero, saepe perferendis? Repellendus?</div>
         </footer>
     </container>
 </body>

@@ -1,8 +1,9 @@
 @media only screen and (max-width: 600px) {
     body {
-      /* background-color: lightblue; */
+        /* background-color: lightblue; */
     }
-  } 
+}
+
 body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
@@ -46,7 +47,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(12, 5, 113, 0.24);
 }
 
 .textover {
@@ -68,13 +69,27 @@ body {
     padding-right: 100px;
     color: beige;
 }
+ul {
+    list-style: none;
+}
+
+ul li label {
+    display: block;
+}
+
+ul li:hover label {
+    color: rgb(170, 125, 69);
+    ;
+}
+
 
 .firstblock,
 .thirdblock,
 .fifthblock {
-    background-color: #365f6e;
+    background-color: rgba(17, 10, 119, 0.889);
 }
 
+.firstblock:after {}
 
 
 .firstblockwrapper,
@@ -93,11 +108,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .firstblocktextdescribe,
 .secondblocktextdescribe,
 .thirdblocktextdescribe {
-margin: 30px 0 30px 0;
+    margin: 30px 0 30px 0;
 }
+
 .firstblocktextwrap,
 .secondblocktextwrap,
 .thirdblocktextwrap {
@@ -106,79 +123,207 @@ margin: 30px 0 30px 0;
 
 .secondblock,
 .fourthblock {
-    background-color: rgb(126, 99, 65);
+    background-color: rgba(95, 114, 46, 0.619);
 }
 
 .firstblockimg,
 .secondblockimg,
 .thirdblockimg {
     border-radius: 7px;
-    width: 600px;
+    width: auto;
     height: 400px;
 }
 
 .footerinfo {
     margin: 30px;
 }
+
 /* ___________________________ */
-.container ul{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-  }
 
-  ul li label{
-    display: block;
+
+
+/* _____________________ */
+
+
+
+.toggle-button-cover {
+    display: table-cell;
     position: relative;
-    cursor: pointer;
-    -webkit-transition: all 0.25s linear;
-  }
-
-  ul li:hover label{
-    color: rgb(170, 125, 69);;
-  }
-   
-  .img2 {
-
-  }
-   /* #mybestchoiseofpicture {
-    background:url(pictures/headpicture500.jpeg) no-repeat left 0; width:425px; padding:0px 0px 0px 20px; height:130px
+    width: 150px;
+    height: 140px;
+    box-sizing: border-box;
+}
+/* 
+.button-cover {
+    height: 100px;
+    margin: 20px;
+    background-color: #8eb288;
+    box-shadow: 10px 10px 20px -8px #c5d6d6;
+    border-radius: 4px;
 } */
 
-
-  /* ul li .check{
-    display: block;
+/* .button-cover:before {
+    counter-increment: button-counter;
+    content: counter(button-counter);
     position: absolute;
-    border: 5px solid #AAAAAA;
-    border-radius: 100%;
-    height: 25px;
-    width: 25px;
-    top: 30px;
-    left: 20px;
-    z-index: 5;
-    transition: border .25s linear;
-    -webkit-transition: border .25s linear;
-    
-  }
-  ul li:hover .check {
-    border: 5px solid #FFFFFF;
-  }
-  ul li .check::before {
-    display: block;
+    right: 0;
+    bottom: 0;
+    color: #d7e3e3;
+    font-size: 12px;
+    line-height: 14;
+    padding: 5px;
+} */
+
+/* .button-cover, */
+.knobs,
+.layer {
     position: absolute;
-    content: '';
-    border-radius: 100%;
-    height: 15px;
-    width: 15px;
-    top: 5px;
-    left: 5px;
-    margin: auto;
-    transition: background 0.25s linear;
-    -webkit-transition: background 0.25s linear;
-  } */
-  
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 
+.button {
+    position: relative;
+    top: 50%;
+    width: 74px;
+    height: 36px;
+    margin: -20px auto 0 auto;
+    overflow: hidden;
+}
 
- 
+.button.r,
+.button.r .layer {
+    border-radius: 100px;
+}
+
+.button.b2 {
+    border-radius: 2px;
+}
+
+.checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs {
+    z-index: 2;
+}
+
+.layer {
+    width: 100%;
+    background-color: #ebf7fc;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+/* Button 1 */
+#button-1 {
+    overflow: visible;
+}
+
+#button-1 .knobs:before {
+    content: "YES";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 20px;
+    height: 10px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    background-color: #5f722e9e;
+    border-radius: 50%;
+}
+
+#button-1 .layer,
+#button-1 .knobs,
+#button-1 .knobs:before {
+    transform: rotateZ(0);
+    transition: 0.4s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-1 .checkbox:checked+.knobs {
+    transform: rotateZ(-180deg);
+}
+
+#button-1 .checkbox:checked+.knobs:before {
+    content: "NO";
+    background-color: #c8635c;
+    transform: rotateZ(180deg);
+}
+
+#button-1 .checkbox:checked~.layer {
+    background-color: #fcebeb;
+    transform: rotateZ(180deg);
+}
+
+/* Button 2 */
+#button-2 {
+    overflow: visible;
+}
+
+#button-2 .knobs {
+    perspective: 70px;
+}
+
+#button-2 .knobs:before,
+#button-2 .knobs:after,
+#button-2 .knobs span {
+    position: absolute;
+    top: 4px;
+    border-radius: 2px;
+}
+
+#button-2 .knobs:before,
+#button-2 .knobs:after {
+    width: 20px;
+    height: 10px;
+    color: #4e4e4e;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+}
+
+#button-2 .knobs:before {
+    content: "YES";
+    left: 4px;
+}
+
+#button-2 .knobs:after {
+    content: "NO";
+    right: 4px;
+}
+
+#button-2 .knobs span {
+    right: 4px;
+    width: 33px;
+    height: 28px;
+    background-color: #778b7f;
+    transform: rotateY(0);
+    transform-origin: 0% 50%;
+    transition: 0.6s ease all;
+    z-index: 1;
+}
+
+#button-2 .checkbox:checked+.knobs span {
+    transform: rotateY(-180deg);
+    background-color: #c8635c;
+}
+
+#button-2 .checkbox:checked~.layer {
+    background-color: #fcebeb;
+}
+/* _________________________________ */

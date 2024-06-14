@@ -1,3 +1,10 @@
+/* #c8635c (mYrosa) */
+/* #0c05713d (mYbackground) */
+/* #2f2988e3 (mYblue) */
+/* #ededed (light background for spans) */
+
+
+
 @media only screen and (max-width: 600px) {
     body {
         /* background-color: lightblue; */
@@ -5,6 +12,7 @@
 }
 
 body {
+    width: 100%;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
@@ -30,32 +38,141 @@ body {
     width: 30px;
 }
 
-.firstimg {
+.firstimgblock {
     position: relative;
     height: 500px;
 }
 
-.firstimg img {
+.firstimgblock img {
     width: 100%;
-    height: 500px;
+    height: 700px;
 }
 
-.firstimg:after {
+.firstimgblock:after {
     content: '';
     width: 100%;
     height: 500px;
     position: absolute;
-    top: 0;
+    top: 5;
     left: 0;
-    background-color: rgba(12, 5, 113, 0.24);
+    background-color: #0c05713d;
 }
+
+/* _____________________Hamburger menu______________ */
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #2f2988e3;
+
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: #c8635c;
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ededed;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #2f2988e3;
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+/*
+ * slide it in from the left
+ */
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+/* _____________________Hamburger menu______________ */
+
 
 .textover {
     position: absolute;
     top: 110px;
     left: 70px;
     z-index: 2;
-    color: beige;
+    color: #ededed;
     font-size: 60px;
     text-align: center;
 }
@@ -69,6 +186,7 @@ body {
     padding-right: 100px;
     color: beige;
 }
+
 ul {
     list-style: none;
 }
@@ -86,7 +204,7 @@ ul li:hover label {
 .firstblock,
 .thirdblock,
 .fifthblock {
-    background-color: rgba(17, 10, 119, 0.889);
+    background-color: rgba(47, 41, 136, 0.889);
 }
 
 .firstblock:after {}
@@ -153,6 +271,7 @@ ul li:hover label {
     height: 140px;
     box-sizing: border-box;
 }
+
 /* 
 .button-cover {
     height: 100px;
@@ -326,4 +445,5 @@ ul li:hover label {
 #button-2 .checkbox:checked~.layer {
     background-color: #fcebeb;
 }
+
 /* _________________________________ */

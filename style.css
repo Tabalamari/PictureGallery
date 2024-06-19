@@ -544,7 +544,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 }
 
 /* footermenu */
-.menuwrapper {
+.options {
     font-size: 15px;
     background: #d8ecf2;
     color: RGBA(67, 83, 99, 1);
@@ -556,16 +556,14 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
     max-width: 350px;
   }
   
-  h2 {
+  .p-r {
     padding: 1.8rem 0;
-    
     font-size: 2.8rem;
-    
     text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
     
   }
   
-  nav {
+  .menuoptions {
     -webkit-box-flex: auto;
     -webkit-flex: auto;
     -ms-flex: auto;
@@ -574,7 +572,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
     padding: .6125rem .6152rem 1.6125rem;
   } 
   
-  li a { 
+  .menuoptionsli a { 
     text-decoration: none;
     color: RGBA(67, 83, 99, 1);
     cursor: -webkit-zoom-in;
@@ -583,7 +581,6 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
   
   ul:hover a {
     opacity: .8;
-    
     -webkit-transform: scale(0.97);
     transform: scale(0.97);
   }
@@ -599,7 +596,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    user-drag: none;
+    -webkit-user-drag: none;
     box-shadow: 0 0 0 -.25rem rgba(0,0,0,.1);
   }
   
@@ -614,26 +611,26 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
     z-index: 1;
   }
   
-  .menu a:nth-child(1) {
+  .menuoptions a:nth-child(1) {
     background: #95c5db;
   }
-  .menu a:nth-child(2) {
+  .menuoptions a:nth-child(2) {
     background: #94c1db;
   }
-  .menu a:nth-child(3) {
+  .menuoptions a:nth-child(3) {
     background: #94bddb;
   }
-  .menu a:nth-child(4) {
+  .menuoptions a:nth-child(4) {
     background: #94b9db;
   }
-  .menu a:nth-child(5) {
+  .menuoptions a:nth-child(5) {
     background: #94b5db;
   }
-  .menu a:nth-child(6) {
+  .menuoptions a:nth-child(6) {
     background: #94b2db;
   }
   
-  .menu a:nth-child(6):hover {
+  .menuoptions a:nth-child(6):hover {
     cursor: pointer;
   }
   

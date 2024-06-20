@@ -8,6 +8,11 @@
         background-color: lightblue;
     } */
 }
+:root {
+    --main-color1: #2f2988e3;
+    --main-color2: #5f722e9e;
+    --main-color3: #c8635c;
+}
 
 body {
     width: auto;
@@ -70,13 +75,13 @@ body {
 
 #menuToggle a {
     text-decoration: none;
-    color: #2f2988e3;
+    color: var(--main-color1);
 
     transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
-    color: #c8635c;
+    color: --main-color3;
 }
 
 
@@ -119,7 +124,7 @@ body {
 #menuToggle input:checked~span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #2f2988e3;
+    background: var(--main-color1);
 }
 
 #menuToggle input:checked~span:nth-last-child(3) {
@@ -174,9 +179,17 @@ body {
     margin: 0;
     padding: 20px 0 20px 0;
 }
+
+.firstblock,
+.thirdblock,
+.fifthblock {
+    background-color: var(--main-color1);
+}
+
 .textandimg {
     margin: 50px;
 }
+
 .chosescheme {
     margin: 15px;
 }
@@ -190,15 +203,41 @@ ul li label {
 }
 
 ul li:hover label {
-    color: rgb(170, 125, 69);
+    color: #aa7d45;
     ;
 }
 
+select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 20rem;
+    padding: 1rem 4rem 1rem 1rem;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+        linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+    color: white;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 
-.firstblock,
-.thirdblock,
-.fifthblock {
-    background-color: rgba(47, 41, 136, 0.889);
+    /* Remove IE arrow */
+    &::-ms-expand {
+        display: none;
+    }
+
+    /* Remove focus outline */
+    &:focus {
+        outline: none;
+    }
+
+    /* <option> colors */
+    option {
+        color: inherit;
+        background-color: var(--option-bg);
+    }
 }
 
 /* _______sidebar toggle menu______ */
@@ -360,7 +399,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 
 .secondblock,
 .fourthblock {
-    background-color: rgba(95, 114, 46, 0.619);
+    background-color: var(--main-color2);
 }
 
 .firstblockimg,
@@ -470,7 +509,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 
 #button-1 .checkbox:checked+.knobs:before {
     content: "NO";
-    background-color: #c8635c;
+    background-color: --main-color3;
     transform: rotateZ(180deg);
 }
 
@@ -531,7 +570,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 
 #button-2 .checkbox:checked+.knobs span {
     transform: rotateY(-180deg);
-    background-color: #c8635c;
+    background-color: --main-color3;
 }
 
 #button-2 .checkbox:checked~.layer {
@@ -608,7 +647,7 @@ ul a:hover {
 }
 
 .menuoptions a:nth-child(1) {
-    background: #95c5db;
+    background: #94c1db;
 }
 
 .menuoptions a:nth-child(2) {

@@ -577,17 +577,14 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
     background-color: #fcebeb;
 }
 /* __popup modal____ */
-.popupmodal {
-    background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+.popmodal {
+    background: url(pictures/vincent-van-gogh-bedroom-in-arles.jpeg) no-repeat;
     background-size: cover;
     height: 100vh;
     text-align: center;
-    font-family: Tahoma, Arial, sans-serif;
-    color: #06D85F;
-    margin: 80px 0;
-  }
-  
-  
+    color: var(--main-color1);
+     }
+
   .box {
     width: 40%;
     margin: 0 auto;

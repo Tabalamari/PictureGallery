@@ -414,7 +414,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
     margin: 30px;
 }
 
-/* _________toggle-buttons____________ */
+/* _________toggle-buttons YES/NO____________ */
 
 
 .toggle-button-cover {
@@ -576,6 +576,17 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 #button-2 .checkbox:checked~.layer {
     background-color: #fcebeb;
 }
+
+/* YES/NO */
+
+/* Animated gradient ghost button */
+
+
+
+  /* End of animated gradient ghost button */
+
+
+
 /* __popup modal____ */
 .popmodal {
     background: url(pictures/vincent-van-gogh-bedroom-in-arles.jpeg) no-repeat;
